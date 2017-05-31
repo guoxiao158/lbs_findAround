@@ -1,0 +1,76 @@
+{
+    "status": "1",
+    "count": "1",
+    "info": "OK",
+    "infocode": "10000",
+    "pois": [
+        {
+            "id": "B0FFHNZBSC",
+            "name": "魔影国际影城",
+            "tag": [],
+            "type": "体育休闲服务;影剧院;电影院",
+            "typecode": "080601",
+            "biz_type": "cinema",
+            "address": "远大路1号居然之家装饰材料馆5层",
+            "location": "116.287943,39.960558",
+            "tel": "010-88878912;15801056516",
+            "postcode": [],
+            "website": [],
+            "email": [],
+            "pcode": "110000",
+            "pname": "北京市",
+            "citycode": "010",
+            "cityname": "北京市",
+            "adcode": "110108",
+            "adname": "海淀区",
+            "importance": [],
+            "shopid": [],
+            "shopinfo": "0",
+            "poiweight": [],
+            "gridcode": "5916725300",
+            "distance": [],
+            "navi_poiid": [],
+            "entr_location": [],
+            "exit_location": [],
+            "match": "0",
+            "recommend": "0",
+            "timestamp": [],
+            "indoor_map": "0",
+            "indoor_src": [],
+            "groupbuy_num": "0",
+            "discount_num": "0",
+            "business_area": "世纪城",
+            "biz_ext": {
+                "rating": "4.0",
+                "cost": [],
+                "seat_ordering": "1",
+                "open_time": []
+            },
+            "event": [],
+            "indoor_data": {
+                "cpid": [],
+                "floor": [],
+                "truefloor": []
+            },
+            "deep_info": {
+                "deepsrc": []
+            },
+            "rich_content": [],
+            "photos": [
+                {
+                    "title": [],
+                    "url": "http://store.is.autonavi.com/showpic/98835798ea94c60de090eac0be21c363"
+                },
+                {
+                    "title": [],
+                    "url": "http://store.is.autonavi.com/showpic/4276ccfbbdd2379d1b9f6754416bdc33"
+                },
+                {
+                    "title": [],
+                    "url": "http://store.is.autonavi.com/showpic/b861c06b428dd85805cc27534ee9dfa2"
+                }
+            ],
+            "children": []
+        }
+    ]
+}
