@@ -1,8 +1,4 @@
 
-
-<template>
-</template>
-
 <script>
 //function getLocation() {
 //		//检查浏览器是否支持地理位置获取
@@ -46,9 +42,9 @@ function getAddress(){
 		     //注：options  为第三个参数 ，为可选参数
 		     //var options = {enableHighAccuracy: true,timeout: 2000,maximumAge: 2000}; 
 		}else{
-		     console.log("浏览器不支持html5来获取地理位置信息"); 
+		     console.log("浏览器不支持hml5来获取地理位置信息"); 
 		}
-			return address;
+	return address;
 }
 
 

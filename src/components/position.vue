@@ -8,24 +8,37 @@
 
 <script>
 	import Address from '../libs/getaddress.vue'
-	var m=Address.getAddress();
-	console.dir("我是"+m.longitude)
+	var m;
 	export default {
 		data(){
 			return{
 				adress:"数据在加载",
-				longitude:Address.address.longitude,
-				latitude:Address.address.latitude
+				p:null
 			}
+		},
+		created(){
+			var  m=Address.getAddress();
+			console.log(Address.getAddress())
+			console.log("获取"+m.longitude);
+			this.p=m
+		},
+		activated(){
+			var  m=Address.getAddress();
+			console.log(Address.getAddress())
+			console.log("获取"+m.longitude);
+			this.p=m;
 		},
 		mounted() {
 			//页面加载时执行
-			this.transAdress();
+			
 		}, 
 		watch:{
 			 // 如果 发生改变，这个函数就会运行
-		    address: function () {
-		    	alert("sss")
+		    p: function (oldvalue,newvalue) {
+		    	console.dir("watach函数"+oldvalue)
+		    	this.p.longitude=oldvalue.longitude;
+		    	this.p.latitude=oldvalue.latitude;
+		    	this.transAdress();
 		    }
 			
 		},
@@ -35,7 +48,7 @@
 				console.log("当前坐标"+this.longitude);
 				if(this.longitude!=0){
 					var _this=this;
-				 	var url="http://restapi.amap.com/v3/geocode/regeo?key=d9b0c725184fc33b2cf8d5d45629d339&location="+this.longitude+","+this.latitude;
+				 	var url="http://restapi.amap.com/v3/geocode/regeo?key=d9b0c725184fc33b2cf8d5d45629d339&location="+this.p.longitude+","+this.p.latitude;
 					this.$http.get(url).then((res)=>{			
 						
 						_this.adress=res.data.regeocode.formatted_address;
