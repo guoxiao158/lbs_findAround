@@ -3,6 +3,16 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import axios from 'axios'
 import routes from './routeConfig.js'
+import AMap from 'vue-amap';
+Vue.use(AMap);
+AMap.initAMapApiLoader({
+  // 高德的key
+  key: 'e724f12bc9e7becf800f1c37e8381092',
+  // 插件集合
+  plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
+});
+
+
 Vue.use(VueRouter);
 
 const router=new VueRouter({

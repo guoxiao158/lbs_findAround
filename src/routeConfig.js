@@ -1,6 +1,7 @@
 import Home from './components/home.vue'
 import List from './components/list.vue'
 import Detail from './components/detail.vue'
+import Map from './components/map.vue'
 export default[
 	   {
 		    path:'/home',
@@ -11,6 +12,11 @@ export default[
 		    path:'/list',
 			name:"list",
 		    component:List
+		},
+		{
+		    path:'/map',
+			name:"map",
+		    component:Map
 		},
 		{
 		    path:'/detail',

@@ -8,6 +8,8 @@
 # install dependencies
 npm install
 
+可能需要安装vue-router  vue-amap
+
 # serve with hot reload at localhost:8080
 npm run dev
 
